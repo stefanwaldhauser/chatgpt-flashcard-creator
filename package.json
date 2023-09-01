@@ -1,0 +1,52 @@
+{
+  "name": "ebook-notes-to-anki",
+  "version": "0.1.0",
+  "description": "Library that transforms notes of unknown words exported as .csv to Anki cards with a definition, examples and translation using ChatGPT.",
+  "main": "lib/index.js",
+  "bin": {
+    "ebook-notes-to-anki": "lib/index.js"
+  },
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "lint": "prettier --check . && eslint .",
+    "format": "prettier --write .",
+    "build": "rm -rf ./lib && tsc && cp -r ./assets  ./lib/assets",
+    "bin": "npm run build && node lib/index.js"
+  },
+  "keywords": [
+    "kindle",
+    "translate",
+    "language",
+    "chatgpt",
+    "anki",
+    "vocabulary",
+    "words",
+    "learning",
+    "ebook"
+  ],
+  "author": "Stefan Waldhauser",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.17.1",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2",
+    "husky": "^8.0.3"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "engines": {
+    "node": ">=18",
+    "npm": ">=9"
+  },
+  "dependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  }
+}
