@@ -1,3 +1,3 @@
-# ebook-notes-to-anki
+# chatgpt-flashcard-creator
 
 Library that transforms notes of unknown words exported as .csv to Anki cards with a definition, examples and translation using ChatGPT.
