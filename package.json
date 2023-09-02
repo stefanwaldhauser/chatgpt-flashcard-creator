@@ -1,6 +1,6 @@
 {
   "name": "ebook-notes-to-anki",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Library that transforms notes of unknown words exported as .csv to Anki cards with a definition, examples and translation using ChatGPT.",
   "main": "lib/index.js",
   "bin": {
@@ -32,9 +32,9 @@
     "@typescript-eslint/parser": "^6.5.0",
     "eslint": "^8.48.0",
     "eslint-config-prettier": "^9.0.0",
+    "husky": "^8.0.3",
     "prettier": "^3.0.3",
-    "typescript": "^5.2.2",
-    "husky": "^8.0.3"
+    "typescript": "^5.2.2"
   },
   "files": [
     "lib/**/*"
@@ -43,7 +43,15 @@
     "node": ">=18",
     "npm": ">=9"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@commander-js/extra-typings": "^11.0.0",
+    "@types/lodash": "^4.14.197",
+    "commander": "^11.0.0",
+    "csv": "^6.3.3",
+    "lodash": "^4.17.21",
+    "openai": "^4.4.0",
+    "zod": "^3.22.2"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint"
