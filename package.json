@@ -1,6 +1,6 @@
 {
   "name": "chatgpt-flashcard-creator",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "This command-line tool converts a single-column .csv file containing unknown words into a double-column .csv file, where the first column represents the front of a flashcard (the unknown word), and the second column serves as the back (containing a definition, a translation and example usages). The back of flashcard is generated via ChatGPT.",
   "main": "lib/index.js",
   "bin": {

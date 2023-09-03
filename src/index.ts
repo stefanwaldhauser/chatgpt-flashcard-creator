@@ -11,7 +11,7 @@ import { outputFlashCards } from "./output";
 async function run() {
   const program = new Command()
     .name("chatgpt-flashcard-creator")
-    .version("0.3.0")
+    .version("0.3.1")
     .requiredOption("-k, --key <chatGPTApiKey>", "API Key of ChatGPT")
     .requiredOption(
       "-w, --wordLang <language>",
