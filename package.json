@@ -1,6 +1,6 @@
 {
   "name": "chatgpt-flashcard-creator",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Library that transforms notes of unknown words exported as .csv to Anki cards with a definition, examples and translation using ChatGPT.",
   "main": "lib/index.js",
   "bin": {
@@ -25,7 +25,7 @@
     "ebook"
   ],
   "author": "Stefan Waldhauser",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.17.1",
     "@typescript-eslint/eslint-plugin": "^6.5.0",
@@ -46,10 +46,12 @@
   "dependencies": {
     "@commander-js/extra-typings": "^11.0.0",
     "@types/lodash": "^4.14.197",
+    "@types/progress": "^2.0.5",
     "commander": "^11.0.0",
     "csv": "^6.3.3",
     "lodash": "^4.17.21",
     "openai": "^4.4.0",
+    "progress": "^2.0.3",
     "zod": "^3.22.2"
   },
   "husky": {
