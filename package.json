@@ -26,6 +26,11 @@
   ],
   "author": "Stefan Waldhauser",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stefanwaldhauser/chatgpt-flashcard-creator.git"
+  },
+  "homepage": "https://github.com/stefanwaldhauser/chatgpt-flashcard-creator#readme",
   "devDependencies": {
     "@types/node": "^18.17.1",
     "@typescript-eslint/eslint-plugin": "^6.5.0",
