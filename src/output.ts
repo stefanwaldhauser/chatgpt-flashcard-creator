@@ -16,7 +16,7 @@ function createBack(flashCard: FlashCard) {
 }
 
 function createFront(flashCard: FlashCard) {
-  return flashCard.word;
+  return flashCard.word + " " + `{${flashCard.wordClass}}`;
 }
 
 export function outputFlashCards(flashards: FlashCard[]) {
